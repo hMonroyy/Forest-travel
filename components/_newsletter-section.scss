@@ -1,0 +1,60 @@
+.newsletter-section {
+    background-color: var(--newsletter-section-bg);
+    padding: 100px 20px;
+    text-align: center;
+
+    .newsletter-overlay {
+        margin: auto;
+        width: 60%;
+        line-height: 1.5;
+
+        .title {
+            color: var(--newsletter-section-title);
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        .text {
+            color: var(--newsletter-section-text);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            .email-label {
+                font-size: 1rem;
+                margin-bottom: 10x;
+                color: var(--newsletter-section-text);
+            }
+
+            .email-input {
+                width: 100%;
+                font-size: 1rem;
+                flex: 0.75;
+                margin-bottom: 10px;
+            }
+
+            .submit-button {
+                background-color: var(--newsletter-section-button);
+                border: none;
+                padding: 22px 90px;
+                font-size: 1rem;
+                font-weight: bold;
+                cursor: pointer;
+                width: 100%;
+
+                &:hover {
+                    background-color: var(--newsletter-section-button-hover);
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+body {
+    background-color: var(--background);
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    font-family: 'Nexa';
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus, [tabindex]:focus {
+    outline: 3px solid var(--outline-focus);
+}
+
+#theme-switcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--switch-theme);
+    padding: 3px 10px;
+    font-size: 2em;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--switch-theme-hover);
+    }
+}

@@ -1,0 +1,54 @@
+#contact-section {
+    width: 100%;
+
+    #container-form {
+        width: 80%;
+
+        .contact-info {
+            width: 70%;
+        }
+
+        .contact-form {
+            width: 70%;
+        }
+    }
+
+    @media (min-width: 801px) and (max-width: 1252px) {
+        #container-form {
+
+            .contact-info {
+                width: 75%;
+            }
+            
+            .contact-form {
+                width: 75%;
+            }
+        }
+    }
+
+    @media (min-width: 577px) and (max-width: 800px) {
+        #container-form {
+
+            .contact-info {
+                width: 80%;
+            }
+
+            .contact-form {
+                width: 80%;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        #container-form {
+
+            .contact-info {
+                width: 100%;
+            }
+
+            .contact-form {
+                width: 100%;
+            }
+        }
+    }
+}

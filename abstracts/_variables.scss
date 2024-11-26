@@ -1,0 +1,208 @@
+:root {
+
+    // Colors
+    --green1: #aad576;
+    --green2: #73a942;
+    --green3: #538d22;
+    --green4: #245501;
+    --green5: #1a4301;
+    --green6: #143601;
+    --green7: #253526;
+
+    --white1: #ffffff;
+    --white2: #f5f5f5;
+    --white3: #f8f9fa;
+    --white4: #e9ecef;
+
+    --black1: #000000;
+    --black2: #333333;
+    --black3: #212529;
+    --black4: #282828;
+    --black5: #1d1d1d;
+
+    --black1rgba: rgba(0, 0, 0, 0.7);
+    --black2rgba: rgba(0, 0, 0, 0.6);
+    --black3rgba: rgba(0, 0, 0, 0.4);
+    --black4rgba: rgba(0, 0, 0, 0.2);
+
+    --grey1: #e0e0e0;
+    --grey2: #b0b0b0;
+    --grey3: #999999;
+    --grey4: #666666;
+
+    --grey1rgba: rgba(224, 224, 224, 0.8);
+    --grey2rgba: rgba(176, 176, 176, 0.6);
+    --grey3rgba: rgba(153, 153, 153, 0.4);
+    --grey4rgba: rgba(102, 102, 102, 0.2);
+
+    --yellow1: #ecb338;
+    --yellow2: #f7c644;
+    --yellow3: #cc9a2f;
+    --yellow4: #b18629;
+    --yellow5: #f3e95c;
+    --yellow6: #d3ca50;
+    --yellow7: #80611e;
+
+    --brown1: #2d2418;
+    --brown2: #3f3221;
+    --brown3: #3e3226;
+    --brown4: #4f4033;
+    --brown5: #beac97;
+
+    --red1: #f37979;
+    --red2: #f25f5f;
+    --red3: #f13c3c;
+    --red4: #f11f1f;
+
+    --purple1: #8e50b4;
+    --purple2: #70348b;
+    --purple3: #452352;
+
+    &.light {
+        --bg-header: var(--green7);
+        --header-text: var(--white2);
+        --header-text-hover: var(--yellow1);
+        --header-text-active: var(--yellow2);
+
+        --bg-footer-content: var(--brown4);
+        --bg-footer-copyright: var(--brown1);
+        --footer-text: var(--white1);
+        --footer-link: var(--white1);
+        --footer-link-hover: var(--brown5);
+
+        --bg-video: var(--black1);
+        --bg-video-rgb: var(--black1rgba);
+        --video-text: var(--white3);
+        --video-btn-bg: var(--green4);
+        --video-btn-bg-hover: var(--green5);
+        --video-btn-bg-active: var(--green6);
+        
+        --tips-section-bg: var(--brown1);
+        --card-bg: var(--brown1);
+        --card-bg-middle: var(--brown2);
+        --card-color: var(--white1);
+        --card-color-hover: var(--grey1);
+
+        --landscape-section-bg: var(--white2);
+        --landscape-section-text-hx: var(--green7);
+        --landscape-section-text: var(--black1);
+
+        --newsletter-section-bg: var(--black4);
+        --newsletter-section-title: var(--yellow1);
+        --newsletter-section-text: var(--white2);
+        --newsletter-section-button: var(--yellow1);
+        --newsletter-section-button-hover: var(--yellow3);
+
+        --bg-plans: var(--black3);
+        --bg-plans-back: var(--grey2);
+        --plans-text: var(--white3);
+        --plans-cover-bg: var(--black4rgba);
+        --plans-cover-bg-hover: var(--black3rgba);
+
+        --bg-schedule: var(--black1);
+        --bg-schedule-rgb: var(--black1rgba);
+        --schedule-title: var(--white1);
+        --schedule-text: var(--white1);
+        --table-color: var(--black5);
+        --table-border: var(--green6);
+        --table-th-bg: var(--yellow1);
+        --table-th-text: var(--black5);
+        --table-td-bg: var(--grey1);
+
+        --gallery-bg: var(--white4);
+        --gallery-info-bg: var(--black3);
+        --gallery-info-bg-photo: var(--black1rgba);
+        --gallery-title: var(--black3);
+        --gallery-text: var(--black3);
+        --gallery-video-bg: var(--black3);
+        --gallery-video-text: var(--white3);
+
+        --galley-video-bg: var(--black1);
+        --gallery-video-text: var(--white1);
+
+        --contact-bg: var(--black1rgba);
+        --contact-color: var(--white1);
+        --contact-button: var(--green4);
+        --contact-button-hover: var(--green5);
+        --contact-form-required: var(--white1);
+
+        --outline-focus: var(--yellow3);
+        --switch-theme: var(--yellow5);
+        --switch-theme-hover: var(--yellow6);
+
+    }
+
+    &.dark {
+        --bg-header: var(--black1);
+        --header-text: var(--white2);
+        --header-text-hover: var(--yellow5);
+        --header-text-active: var(--yellow6);
+    
+        --bg-footer-content: var(--black4);
+        --bg-footer-copyright: var(--black5);
+        --footer-text: var(--white1);
+        --footer-link: var(--white1);
+        --footer-link-hover: var(--grey1);
+    
+        --bg-video: var(--grey1);
+        --bg-video-rgb: var(--black1rgba);
+        --video-text: var(--white3);
+        --video-btn-bg: var(--green4);
+        --video-btn-bg-hover: var(--green5);
+        --video-btn-bg-active: var(--green6);
+    
+        --tips-section-bg: var(--black5);
+        --card-bg: var(--black5);
+        --card-bg-middle: var(--black4);
+        --card-color: var(--white1);
+        --card-color-hover: var(--grey2);
+    
+        --landscape-section-bg: var(--black2);
+        --landscape-section-text-hx: var(--green1);
+        --landscape-section-text: var(--white1);
+    
+        --newsletter-section-bg: var(--black2);
+        --newsletter-section-title: var(--yellow5);
+        --newsletter-section-text: var(--white2);
+        --newsletter-section-button: var(--yellow5);
+        --newsletter-section-button-hover: var(--yellow6);
+
+        --bg-plans: var(--black3);
+        --bg-plans-back: var(--black4);
+        --plans-text: var(--white3);
+        --plans-cover-bg: var(--black2rgba);
+        --plans-cover-bg-hover: var(--black1rgba);
+    
+        --bg-schedule: var(--black1);
+        --bg-schedule-rgb: var(--black1rgba);
+        --schedule-title: var(--white1);
+        --schedule-text: var(--white1);
+        --table-color: var(--black5);
+        --table-border: var(--green6);
+        --table-th-bg: var(--black2);
+        --table-th-text: var(--white3);
+        --table-td-bg: var(--grey1);
+    
+        --gallery-bg: var(--black2);
+        --gallery-info-bg: var(--black2);
+        --gallery-info-bg-photo: var(--black1rgba);
+        --gallery-title: var(--white1);
+        --gallery-text: var(--white3);
+        --gallery-video-bg: var(--white3);
+        --gallery-video-text: var(--black3);
+    
+        --gallery-video-bg: var(--black3);
+        --gallery-video-text: var(--white3);
+    
+        --contact-bg: var(--black1rgba);
+        --contact-color: var(--white1);
+        --contact-button: var(--black2);
+        --contact-button-hover: var(--black3);
+        --contact-form-required: var(--white1);
+    
+        --outline-focus: var(--yellow6);
+        --switch-theme: var(--yellow1);
+        --switch-theme-hover: var(--yellow2);
+    }
+
+}

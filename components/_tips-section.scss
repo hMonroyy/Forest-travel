@@ -1,0 +1,9 @@
+#tips-section {
+    background-color: var(--tips-section-bg);
+    border-top: 5px solid var(--card-bg-middle);
+    border-bottom: 5px solid var(--card-bg-middle);
+
+    #card-section {
+        background-color: var(--tips-section-bg);
+    }
+}

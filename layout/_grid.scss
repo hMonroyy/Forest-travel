@@ -1,0 +1,148 @@
+#video-section {
+
+    #video-overlay {
+
+        #video-text {
+            padding: 0 350px;
+            
+            @media (min-width: 801px) and (max-width: 1252px) {
+                padding: 0 200px;
+            }
+
+            @media (min-width: 577px) and (max-width: 800px) {
+                padding: 0 100px;
+            }
+
+            @media (max-width: 576px) {
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+#tips-section {
+    width: 100%;
+
+    #card-section {
+        width: 75%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+
+        @media (min-width: 1151px) and (max-width: 1252px) {
+            flex-direction: row;
+        }
+
+        @media (min-width: 801px) and (max-width: 1150px) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        @media (min-width: 577px) and (max-width: 800px) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .card {
+            padding: 35px 70px;
+        }
+    }
+}
+
+.landscape-section {
+    display: flex;
+    justify-content: space-between;
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    @media (min-width: 577px) and (max-width: 839px) {
+        flex-direction: column;
+
+        &:nth-child(even) {
+            flex-direction: column;
+        }
+
+        .paragraph-landscape-section {
+            width: 100%;
+            .text-landscape {
+                padding: 50px 100px;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+
+
+        &:nth-child(even) {
+            flex-direction: column;
+        }
+
+        .image-landscape {
+            width: 100%;
+        }
+
+        .paragraph-landscape-section {
+            width: 100%;
+            .text-landscape {
+                padding: 50px 20px;
+            }
+        }
+    }
+}
+
+.newsletter-section {
+
+    .newsletter-overlay {
+        width: 60%;
+
+        .form { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .email-input {
+                margin-right: 10px;
+                padding: 20px;
+            }
+
+            @media (max-width: 576px) {
+                display: flex;
+                flex-direction: column;
+
+                .email-input {
+                    width: 85%;
+                    margin-right: 0px;
+                    margin-bottom: 10px;
+                }
+
+                .submit-button {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        @media (min-width: 577px) and (max-width: 839px) {
+            width: 80%;
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+
+
+
+        }
+
+    }    
+}

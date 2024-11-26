@@ -1,0 +1,129 @@
+#plans {
+    background-color: var(--bg-plans);
+
+    .plans-info {
+        padding-bottom: 50px;
+        text-align: center;
+        color: var(--plans-text);
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .plans-card {
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+        border-radius: 10px;
+        color: var(--plans-text);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--plans-cover-bg);
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+            h3 {
+                font-size: 2.5em;
+                position: absolute;
+                bottom: 10%;
+                left: 5%;
+                color: var(--plans-text);
+                transition: bottom 0.3s ease;
+            }
+
+            .price {
+                font-size: 2em;
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                color: var(--plans-text);
+            }
+
+            .card-extension {
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+                color: var(--plans-text);
+                transition: height 0.3s ease;
+                padding: 20px;
+                box-sizing: border-box;
+            
+                h4 {
+                    font-size: 1.75em;
+                    margin-bottom: 20px;
+                }
+            
+                ul {
+                    list-style: none;
+                    padding: 0;
+            
+                    li {
+                        margin-bottom: 5px;
+                    }
+
+                    li:last-child {
+                        margin-bottom: 10px;
+                    }
+                }
+            
+                a {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    border: 3px solid var(--card-color);
+                    color: var(--plans-text);
+                    text-decoration: none;
+                    margin-top: 10px;
+                    transition: background 0.3s ease;
+            
+                    &:hover {
+                        border: 3px solid var(--card-color-hover);
+                        color: var(--card-color-hover);
+                    }
+                }
+            
+                &:hover {
+                    height: 30%;
+                }
+            }
+
+            &:hover, &:focus {
+                background: var(--plans-cover-bg-hover);
+
+                h3 {
+                    bottom: 35%;
+                }
+
+                .card-extension {
+                    height: 35%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+#trailer-video {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: var(--gallery-video-bg);
+    line-height: 1.4;
+
+    .container-video-plans {
+
+        .video-info {
+            width: 100%;
+            padding: 1em;
+            box-sizing: border-box;
+            text-align: left;
+
+            h2 {
+                color: var(--gallery-video-text);
+                font-weight: 700;
+                margin-bottom: 0.5em;
+            }
+
+            p {
+                color: var(--gallery-video-text);
+                font-weight: 400;
+                margin-bottom: 0.5em;
+            }
+        }
+    
+        .video-files {
+            width: 100%;
+        }
+
+    }
+}
+
+::cue {
+    color: #333;
+    background-color: #b0e498;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
