@@ -239,6 +239,10 @@ table {
   font-family: "Nexa";
   src: url("/public/fonts/Nexa-Heavy.ttf");
 }
+@font-face {
+  font-family: "Nexa";
+  src: url("/fonts/Nexa-Heavy.ttf");
+}
 body {
   background-color: var(--background);
   width: 100%;
